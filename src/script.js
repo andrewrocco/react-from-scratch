@@ -23,7 +23,7 @@ var TextForm = React.createClass({
   },
   render: function() {
     return (
-      <div className="form-container">
+      <div className="field-container">
         <input
           type="text"
           placeholder="Type something..."
