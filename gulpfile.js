@@ -18,12 +18,11 @@ bundler.on('update', bundle);
 
 function bundle() {
 
-  gutil.log('Compiling JS...');
+  gutil.log('Bundling...');
 
   return bundler.bundle()
     .on('error', function (err) {
       gutil.log(err.message);
-      browserSync.notify("Browserify Error!");
       this.emit("end");
     })
     .pipe(source('bundle.js'))
