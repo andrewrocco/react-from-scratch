@@ -1,13 +1,13 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 
-// Hello World!
+// 1. Hello World!
 ReactDOM.render(
   <h1>Hello, world!</h1>,
   document.getElementById('hello')
 );
 
-// Events from a text field
+// 2. Events from a text field
 var TextForm = React.createClass({
   getInitialState: function() {
     return {
