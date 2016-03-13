@@ -12,19 +12,27 @@ ReactDOM.render(<HelloWorld/>, document.getElementById('hello'));
 
 // 2. Events from a text field
 var TextForm = React.createClass({
+
+  // default data state for the component
   getInitialState: function() {
     return {
       value: '',
       output: 'Awaiting input...'
     };
   },
+
+  // sets this.state.value to the input field value
   handleChange: function(event) {
     this.setState( {value: event.target.value} );
   },
+
+  // sets this.state.output to state value
   handleClick: function(event) {
     event.preventDefault();
     this.setState( {output: this.state.value} );
   },
+
+  // render the form
   render: function() {
     return (
       <form className="react-form">
