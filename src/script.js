@@ -27,7 +27,7 @@ var TextForm = React.createClass({
   },
   render: function() {
     return (
-      <form className="awesome-form">
+      <form className="react-form">
         <input
           type="text"
           placeholder="Type something..."
