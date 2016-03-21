@@ -4,11 +4,11 @@ var ReactDOM = require('react-dom');
 // 1. Hello World!
 var HelloWorld = React.createClass({
   render: function() {
-    return <h1>Hello, world!</h1>;
+    return <h1>{this.props.message}</h1>;
   }
 });
 
-ReactDOM.render(<HelloWorld/>, document.getElementById('hello'));
+ReactDOM.render(<HelloWorld message="Hello, World!"/>, document.getElementById('hello'));
 
 // 2. Events from a text field
 var TextForm = React.createClass({
@@ -49,4 +49,4 @@ var TextForm = React.createClass({
   }
 });
 
-ReactDOM.render(<TextForm/>, document.getElementById('form'));
+ReactDOM.render(<TextForm />, document.getElementById('form'));
